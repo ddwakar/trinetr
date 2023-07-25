@@ -5,8 +5,8 @@ const cors = require('cors'); // Import the cors package
 const admin = require('firebase-admin');
 
 app.use(express.json());
-app.use(cors({ origin: 'http://localhost:4200' }));
-//app.use(cors({ origin: 'https://trinetr.web.app' }));
+//app.use(cors({ origin: 'http://localhost:4200' }));
+app.use(cors({ origin: 'https://trinetr.web.app' }));
 
 app.post('/send-email', (req, res) => {
   const { to, subject, text } = req.body;
