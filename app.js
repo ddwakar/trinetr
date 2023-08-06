@@ -22,8 +22,8 @@ app.post('/send-email', (req, res) => {
   });
 
   const mailOptions = {
-    from: 'Trinetr',
-    sender:'Trinetra Mobile Tracking',
+    from: '"Trinetr OTP" ',
+    sender:'"Trinetra Mobile Tracking"',
     to,
     subject,
     text,
