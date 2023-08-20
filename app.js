@@ -16,14 +16,14 @@ app.post('/send-email', (req, res) => {
     service: 'gmail',
     port:25,
     auth: {
-      user: 'trinetra.app.help@gmail.com',
-      pass: 'utozxgadevypkggm',
+      user: 'trinetr.help@gmail.com',
+      pass: 'dpcppylllliwqyex',
     },
   });
 
   const mailOptions = {
-    from: '"Trinetr OTP" ',
-    sender:'"Trinetra Mobile Tracking"',
+    from: '"Trinetr" ',
+    sender:'"Trinetr Mobile Tracking"',
     to,
     subject,
     text,
